@@ -43,6 +43,35 @@ export class LinkedList {
       return;
     }
   }
+  public removeAt(pos: number) {
+    if (pos == 0 && this._head) {
+      this._head = this._head.Next;
+      return;
+    } else {
+      if (pos > this.length) {
+        throw new Error("Error");
+      }
+      let prev: Node = null;
+      let current = this._head;
+      while (pos > 0) {
+        prev = current;
+        current = current.Next;
+        pos--;
+      }
+      prev.Next = current.Next;
+      return;
+    }
+  }
+
+  public get length() {
+    let current: Node = this._head;
+    let count = 0;
+    while (current) {
+      count++;
+      current = current.Next;
+    }
+    return count;
+  }
   public insertAt(pos: number, val: number) {
     //asuuming pos is less than linkedlist
     let newNode = new Node(val);
