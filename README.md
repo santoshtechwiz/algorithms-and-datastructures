@@ -10,4 +10,4 @@ This repository contains implementation of sevrals alogrithms in typescript
 - [Linked List](https://en.wikipedia.org/wiki/Linked_list)
 - [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap)
 - [Shuffle an Array](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
-- [Permutation] (https://en.wikipedia.org/wiki/Permutation)
+- [Permutation](https://en.wikipedia.org/wiki/Permutation)
