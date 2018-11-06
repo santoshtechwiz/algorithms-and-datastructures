@@ -4,14 +4,14 @@ export function QuickSort(
   end: number = arr.length
 ): Array<number> {
   if (start < end) {
-    let p = partion(arr, start, end);
+    let p = partition(arr, start, end);
     QuickSort(arr, start, p - 1);
     QuickSort(arr, p + 1, end);
   }
   return arr;
 }
 
-function partion(
+function partition(
   arr: Array<number>,
   start: number = 0,
   end: number = arr.length
