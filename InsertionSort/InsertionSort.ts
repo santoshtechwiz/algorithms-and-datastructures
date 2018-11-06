@@ -5,11 +5,14 @@ export function insertionSort(arr: Array<number>): Array<number> {
 
     while (j >= 0 && arr[j] > currentItem) {
       arr[j + 1] = arr[j];
+      j;
       j--;
     }
+    currentItem;
     arr[j + 1] = currentItem;
   }
 
   return arr;
 }
-insertionSort([1, 2, -1, -2]);
+var result = insertionSort([1, 2, -1, -2]);
+console.log(result);
