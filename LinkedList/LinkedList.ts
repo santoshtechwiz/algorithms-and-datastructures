@@ -37,6 +37,12 @@ export class LinkedList {
     }
     current.Next = newNode;
   }
+  public removeHead() {
+    if (this._head) {
+      this._head = this._head.Next;
+      return;
+    }
+  }
   public insertAt(pos: number, val: number) {
     //asuuming pos is less than linkedlist
     let newNode = new Node(val);
