@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { selectionSort } from "../SelectionSort/SelectionSort";
 
-describe("selectionSort Sort", () => {
+describe.skip("selectionSort Sort", () => {
   it("Sort the array in ascending order", () => {
     const arr = [4, 2, 1, -1, 10, -2, -100];
     var result = selectionSort(arr);

@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { primes } from "../Primes/Primes";
 
-describe("Prime Number", () => {
+describe.skip("Prime Number", () => {
   it("Print the prime number", () => {
     var result = primes(10);
 
