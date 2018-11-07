@@ -10,6 +10,9 @@ export class Queue<T> {
   public get count(): number {
     return this.items.length;
   }
+  public get isEmpty(): boolean {
+    return this.items.length === 0;
+  }
   public get queueItems(): T[] {
     return this.items;
   }
