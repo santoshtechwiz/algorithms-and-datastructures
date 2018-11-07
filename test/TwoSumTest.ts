@@ -11,9 +11,9 @@ describe("Two sum", () => {
   });
   it("should return index of the array element", () => {
     let arr = [1, 2, 3, 4, 10, 12, 14];
-    let sum = 11;
+    let sum = 15;
     let result = twoSum(arr, sum);
     expect(Array.isArray(result));
-    expect(result).to.deep.equal([0, 4]);
+    expect(result).to.deep.equal([0, 6]);
   });
 });
