@@ -32,4 +32,15 @@ describe("Binary Search Tree", () => {
     expect(result).to.be.an("number");
     expect(result).to.equal(-10);
   });
+  it("should remove the given key from the tree", () => {
+    let tree = new BinarySearchTree();
+    tree.insert(1);
+    tree.insert(10);
+    tree.insert(-1);
+    tree.insert(-10);
+    tree.remove(-1);
+    let result = tree.print();
+    expect(result).to.be.an("Array");
+    expect(result).to.deep.equal([-10, 1, 10]);
+  });
 });
