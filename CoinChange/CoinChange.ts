@@ -30,3 +30,18 @@ export function coinChange2(
   }
   return ways;
 }
+export function coinChangeDP(coins: Array<number>, amount: number): number {
+  let combinations: Array<number> = new Array<number>(amount + 1);
+  combinations.fill(0);
+  combinations[0] = 1;
+
+  for (let coin of coins) {
+    for (let i = 1; i < combinations.length; i++) {
+      if (i >= coin) {
+        combinations[i] += combinations[i - coin];
+      }
+    }
+  }
+
+  return combinations[amount];
+}
