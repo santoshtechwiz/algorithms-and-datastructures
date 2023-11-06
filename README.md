@@ -1,4 +1,4 @@
-This repository contains implementation of sevrals alogrithms in typescript
+This repository is a comprehensive collection of TypeScript implementations for various algorithms and data structures. These include well-known sorting algorithms like Bubble Sort, Selection Sort, Quick Sort, Insertion Sort, and Merge Sort. Additionally, it covers fundamental algorithms such as the Sieve of Eratosthenes, Selection algorithm, as well as data structures like Linked List and Binary Heap. You'll also find utilities like Shuffle an Array and Permutation algorithms. Explore these implementations to deepen your understanding of algorithms and data structures in TypeScript.
 
 - [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
 - [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
